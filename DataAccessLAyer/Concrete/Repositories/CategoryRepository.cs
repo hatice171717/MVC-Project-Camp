@@ -1,4 +1,4 @@
-﻿using DataAccessLAyer.Abstract;
+﻿using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLAyer.Concrete.Repositories
+namespace DataAccessLayer.Concrete.Repositories
 {
     public class CategoryRepository : ICategoryDal
     {
@@ -20,6 +20,11 @@ namespace DataAccessLAyer.Concrete.Repositories
         {
             _object.Remove(p);
             c.SaveChanges();
+        }
+
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
 
         public void Insert(Category p)

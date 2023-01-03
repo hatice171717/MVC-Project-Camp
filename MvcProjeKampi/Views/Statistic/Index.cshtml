@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İstatistik</h2>
+<br />
+<div class="row">
+    <div style="margin:50px; width:200px; height:150px; background-color:#19d7bf; border:2px solid black; border-radius:10px;padding:10px">
+        <div class="inner">
+            <br />
+            <label>Toplam Kategori Sayısı</label>
+            <br />
+            <h2>@ViewBag.CategoryCount</h2>
+          
+
+        </div>
+
+    </div>
+    <div style="margin:50px; width:200px; height:150px; background-color:#8b45e5; border:2px solid black; border-radius:10px;padding:10px">
+        <div class="inner">
+         
+            <label>Başlık Tablosunda "Yazılım" <br />kategorisine ait <br />başlık sayısı</label>
+            <br />
+            <h2>@ViewBag.baslikyazilim</h2>
+           
+        </div>
+
+    </div>
+    <div style="margin:50px; width:200px; height:150px; background-color:#7fef32; border:2px solid black; border-radius:10px;padding:10px">
+        <div class="inner">
+            
+            <label>Yazar Adında "a"<br /> Harfi Geçen <br />Yazar Sayısı</label>
+            <br />
+            <h2>@ViewBag.WriterNameHasA</h2>
+           
+
+        </div>
+
+    </div>
+    <div style="margin:50px; width:200px; height:150px; background-color:#e9588d; border:2px solid black; border-radius:10px;padding:10px">
+        <div class="inner">
+            
+            <label>En Fazla Başlığa <br /> Sahip Kategori</label>
+            <br />
+            <h2>@ViewBag.MaxCategoryName</h2>
+            
+
+        </div>
+
+    </div>
+    <div style="margin:50px; width:200px; height:150px; background-color:#878787; border:2px solid black; border-radius:10px;padding:10px">
+        <div class="inner">
+            
+            <label>Kategori Tablosunda <br />Durumu True Olan ile <br />False olan Kategoriler <br />Arasındaki Fark</label>
+            <br />
+            <h2>@ViewBag.Fark</h2>
+          
+
+        </div>
+
+    </div>
+
+</div>

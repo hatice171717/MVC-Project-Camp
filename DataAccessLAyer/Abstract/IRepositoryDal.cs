@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLAyer.Abstract
+namespace DataAccessLayer.Abstract
 {
     public interface IRepositoryDal<T>
     {
@@ -15,6 +15,8 @@ namespace DataAccessLAyer.Abstract
         List<T> List();
 
         void Insert(T p);
+
+        T Get(Expression<Func<T, bool>> filter);
 
         void Delete(T p);
 

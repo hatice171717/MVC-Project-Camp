@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLAyer.Abstract
+namespace DataAccessLayer.Abstract
 {
     public interface IHeadingDal : IRepositoryDal<Heading>
     {
